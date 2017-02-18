@@ -1,7 +1,8 @@
 import UIKit
+import FirebaseDatabase
+import Firebase
 
 class ToDoItemViewController: UIViewController, UINavigationControllerDelegate, UITextFieldDelegate {
-    
     
     var item:ToDoItem?
 
@@ -15,12 +16,12 @@ class ToDoItemViewController: UIViewController, UINavigationControllerDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
         if let item = self.item{
-            self.nome.text = item.nome!
-            self.descricao.text = item.descricao!
-            self.dtInicio.date = item.dtInicio!
-            self.hrInicio.date = item.hrInicio!
-            self.relevancia.selectedSegmentIndex = item.relevancia!
-            self.status.isOn = item.status!
+            self.nome.text = item.nome
+            self.descricao.text = item.descricao
+            self.dtInicio.date = item.dtInicio
+            self.hrInicio.date = item.hrInicio
+            self.relevancia.selectedSegmentIndex = item.relevancia
+            self.status.isOn = item.status
         }
     }
 
@@ -35,8 +36,9 @@ class ToDoItemViewController: UIViewController, UINavigationControllerDelegate, 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "add"){
             let newItem = ToDoItem(nome: self.nome.text!, descricao: self.descricao.text! ,
-                                   dtInicio: self.dtInicio.date,hrInicio: self.hrInicio.date, relevancia: self.relevancia.selectedSegmentIndex, status : self.status.isOn)
+                                   dtInicio: self.dtInicio.date,hrInicio: self.hrInicio.date, relevancia: self.relevancia.selectedSegmentIndex, status : self.status.isOn, email:FIRAuth.auth()!.currentUser!.email!,key: item?.key!, ref: item?.ref!)
             self.item = newItem
+            
         }
     }
     

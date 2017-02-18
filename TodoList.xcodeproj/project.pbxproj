@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		815A01BE1E5894CF00CD1F2F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815A01BD1E5894CF00CD1F2F /* DateExtension.swift */; };
 		818A1DC81E4600A9005954C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818A1DC71E4600A9005954C9 /* AppDelegate.swift */; };
 		818A1DCA1E4600A9005954C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818A1DC91E4600A9005954C9 /* ViewController.swift */; };
 		818A1DCD1E4600A9005954C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818A1DCB1E4600A9005954C9 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		2A778CF17F9EEB7D435FD602 /* Pods-TodoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodoList/Pods-TodoList.debug.xcconfig"; sourceTree = "<group>"; };
 		58DE3F44B2DB379AB419D668 /* Pods_TodoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		815A01BD1E5894CF00CD1F2F /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		818A1DC41E4600A9005954C9 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		818A1DC71E4600A9005954C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		818A1DC91E4600A9005954C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				81D793A41E463F4A00EF250B /* ToDoTableViewController.swift */,
 				81D793A61E4640A200EF250B /* ToDoItem.swift */,
 				81D793A81E46562300EF250B /* ToDoItemViewController.swift */,
+				815A01BD1E5894CF00CD1F2F /* DateExtension.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81D793A91E46562300EF250B /* ToDoItemViewController.swift in Sources */,
+				815A01BE1E5894CF00CD1F2F /* DateExtension.swift in Sources */,
 				818A1DCA1E4600A9005954C9 /* ViewController.swift in Sources */,
 				81D793A51E463F4A00EF250B /* ToDoTableViewController.swift in Sources */,
 				81D793A71E4640A200EF250B /* ToDoItem.swift in Sources */,
